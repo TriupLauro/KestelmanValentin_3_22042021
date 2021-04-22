@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: auto;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 10rem;
+  height: 2rem;
+}
+
+.localisation {
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background-color: #EAEAEA;
+  -webkit-box-shadow: inset 0 0.1rem 0.1rem #D0D0D0;
+          box-shadow: inset 0 0.1rem 0.1rem #D0D0D0;
+}
+
+.localisation i {
+  padding-right: 1rem;
+}
+
+.explication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  height: 15rem;
+  padding: 2rem 0;
+}
+
+.explication * {
+  text-align: center;
+}
+
+.explication h1 {
+  width: 15rem;
+  font-size: 1.5rem;
+}
+
+.explication p {
+  width: 22.5rem;
+  font-size: 1rem;
+}
+
+.explication__bouton {
+  cursor: pointer;
+  height: 3rem;
+  line-height: 3rem;
+  width: 15rem;
+  background-color: #9356DC;
+  font-size: 1rem;
+  color: white;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0.2rem 0.1rem #CCC;
+          box-shadow: 0 0.2rem 0.1rem #CCC;
+  margin: 2rem 0;
+}
+
+.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement h2 {
+  font-size: 1.4rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 1rem;
+}
+
+.fonctionnement__etape1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  width: 20rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
+          box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
+  border-radius: 1rem;
+}
+
+.fonctionnement__etape1__num {
+  display: block;
+  background-color: #9356DC;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-left: -0.75rem;
+  font-size: 0.75rem;
+}
+
+.fonctionnement__etape1 i {
+  display: block;
+  width: 3rem;
+  color: #7e7e7e;
+  text-align: center;
+}
+
+.fonctionnement__etape2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  width: 20rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
+          box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
+  border-radius: 1rem;
+}
+
+.fonctionnement__etape2__num {
+  display: block;
+  background-color: #9356DC;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-left: -0.75rem;
+  font-size: 0.75rem;
+}
+
+.fonctionnement__etape2 i {
+  display: block;
+  width: 3rem;
+  color: #7e7e7e;
+  text-align: center;
+}
+
+.fonctionnement__etape3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  width: 20rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
+          box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
+  border-radius: 1rem;
+}
+
+.fonctionnement__etape3__num {
+  display: block;
+  background-color: #9356DC;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-left: -0.75rem;
+  font-size: 0.75rem;
+}
+
+.fonctionnement__etape3 i {
+  display: block;
+  width: 3rem;
+  color: #7e7e7e;
+  text-align: center;
+}
+
+footer {
+  background-color: #353535;
+}
+
+footer img {
+  padding: 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

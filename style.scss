@@ -1,0 +1,124 @@
+//Variables
+$clr-primaire: #9356DC;
+$clr-secondaire: #FF79DA;
+$clr-tertiaire: #99E2D0;
+$clr-ombre: #CCC;
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: auto;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 10rem;
+        height: 2rem;
+    }
+}
+
+.localisation {
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    background-color: #EAEAEA;
+    box-shadow: inset 0 0.1rem 0.1rem #D0D0D0;
+    i {
+        padding-right: 1rem;
+    }
+}
+
+.explication {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 15rem;
+    padding: 2rem 0;
+    * {
+        text-align: center;
+    }
+    h1 {
+        width: 15rem;
+        //border: 1px solid black;
+        font-size: 1.5rem;
+    }
+    p {
+        width: 22.5rem;
+        font-size: 1rem;
+    }
+    &__bouton {
+        cursor: pointer;
+        height: 3rem;
+        line-height: 3rem;
+        width: 15rem;
+        background-color: $clr-primaire;
+        font-size: 1rem;
+        color: white;
+        border-radius: 1.5rem;
+        box-shadow: 0 0.2rem 0.1rem $clr-ombre;
+        margin: 2rem 0;
+    }
+}
+
+.fonctionnement {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 1.4rem;
+        align-self: flex-start;
+        margin-left: 1rem;
+    }
+    @for $i from 1 through 3 {
+        &__etape#{$i} {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            background-color: #f6f6f6;
+            width: 20rem;
+            height: 3.5rem;
+            line-height: 3.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0.2rem 0.5rem 0.1rem $clr-ombre;
+            border-radius: 1rem;
+            &__num {
+                display: block;
+                background-color: $clr-primaire;
+                color: white;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 0.75rem;
+                line-height: 1.5rem;
+                text-align: center;
+                margin-left: -0.75rem;
+                font-size: 0.75rem;
+            }
+            i {
+                display: block;
+                width: 3rem;
+                color: #7e7e7e;
+                text-align: center;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #353535;
+    img {
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
