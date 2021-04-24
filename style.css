@@ -217,6 +217,7 @@ header img {
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 2rem;
+  margin-bottom: -1rem;
 }
 
 .restaurants h2 {
@@ -296,6 +297,30 @@ header img {
   margin-right: 1rem;
   margin-top: 1rem;
   font-size: 1.2rem;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.restaurants__palette__legende i::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: bold;
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  line-height: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.restaurants__palette__legende i:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .restaurants__note_enchantee {
@@ -369,6 +394,30 @@ header img {
   margin-right: 1rem;
   margin-top: 1rem;
   font-size: 1.2rem;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.restaurants__note_enchantee__legende i::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: bold;
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  line-height: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.restaurants__note_enchantee__legende i:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .restaurants__francaise {
@@ -442,6 +491,30 @@ header img {
   margin-right: 1rem;
   margin-top: 1rem;
   font-size: 1.2rem;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.restaurants__francaise__legende i::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: bold;
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  line-height: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.restaurants__francaise__legende i:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .restaurants__delice_sens {
@@ -515,6 +588,30 @@ header img {
   margin-right: 1rem;
   margin-top: 1rem;
   font-size: 1.2rem;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.restaurants__delice_sens__legende i::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: bold;
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  line-height: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.restaurants__delice_sens__legende i:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {
