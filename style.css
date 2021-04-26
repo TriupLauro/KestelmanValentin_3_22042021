@@ -712,6 +712,28 @@ footer ul li i {
   margin-left: auto;
   margin-right: 1rem;
   cursor: pointer;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.menu .imgconteneur h2 i::after {
+  content: "\f004";
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  color: #9356DC;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.menu .imgconteneur h2 i:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .menu .menu-liste h3 {
@@ -782,8 +804,8 @@ footer ul li i {
   padding-right: 1rem;
   padding-top: 2rem;
   margin-left: auto;
-  -webkit-transform: translateX(4.5rem);
-          transform: translateX(4.5rem);
+  -webkit-transform: translateX(4rem);
+          transform: translateX(4rem);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;

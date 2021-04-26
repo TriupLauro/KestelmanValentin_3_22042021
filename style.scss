@@ -287,6 +287,20 @@ footer {
                 margin-left: auto;
                 margin-right: 1rem;
                 cursor: pointer;
+                position: relative;
+                transform: scale(0.9);
+                &::after {
+                    content: "\f004";
+                    font-weight: bold;
+                    position: absolute;
+                    left: 0;
+                    color: $clr-primaire;
+                    transform: scale(0);
+                    transition: transform 1s;
+                }
+                &:hover::after {
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -345,7 +359,7 @@ footer {
                     padding-right: 1rem;
                     padding-top: 2rem;
                     margin-left: auto;
-                    transform: translateX(4.5rem);
+                    transform: translateX(4rem);
                     transition: transform 1s;
                 }
             }
@@ -369,7 +383,7 @@ footer {
                 }
             }
 
-            //animation
+            //animation du menu
             &:hover .menu-liste__article__description__prix, &:hover .menu-liste__article__fond-cache {
                 transform: translateX(0rem);
                 i {
