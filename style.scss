@@ -3,6 +3,7 @@ $clr-primaire: #9356DC;
 $clr-secondaire: #FF79DA;
 $clr-tertiaire: #99E2D0;
 $clr-ombre: #CCC;
+$clr-fond-gris: #f6f6f6;
 
 $list-restaurants: "palette", "note_enchantee", "francaise", "delice_sens";
 
@@ -10,11 +11,13 @@ $list-restaurants: "palette", "note_enchantee", "francaise", "delice_sens";
     box-shadow: 0 0.2rem 0.5rem 0.1rem $clr-ombre;
 }
 
+//Propriétés générales
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+//Page d'accueil
 header {
     width: auto;
     height: 3.5rem;
@@ -231,4 +234,167 @@ footer {
             }
         }
     }
+}
+
+//Page(s) de menu
+.menu {
+    background-color: $clr-fond-gris;
+    //Correction pour enlever une barre blanche entre le menu et le footer
+    margin-bottom: -1rem;
+    header {
+        display: flex;
+        justify-content: center;
+        h1 {
+            font-family: 'Shrikhand', cursive;
+            font-weight: normal;
+            //Mettre la marge opposé à nav pour que ça reste centré
+            margin-left: 4rem;
+        }
+        nav {
+            //Prendre la marge opposé à h1 pour que ça s'aligne à gauche
+            margin-left: -4rem;
+            font-size: 1.2rem;
+            a {
+                color: black;
+            } 
+        }
+    } 
+
+    .imgconteneur {
+        position: relative;
+        height: 17rem;
+        img {
+            width: 100%;
+            height: 17rem;
+        }
+        h2 {
+            display: flex;
+            align-items: flex-end;
+            background-color: $clr-fond-gris;
+            border-radius: 2rem 2rem 0 0;
+            font-family: 'Shrikhand', cursive;
+            font-weight: normal;
+            font-size: 1.8rem;
+            box-sizing: border-box;
+            padding-left: 1rem;
+            position: absolute;
+            bottom:0;
+            margin: 0;
+            height: 4rem;
+            width: 100%;
+            i {
+                display: block;
+                margin-left: auto;
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+    //Menu lui même
+    .menu-liste {
+        h3 {
+            font-weight: normal;
+            font-size: 1rem;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            margin-left: 1rem;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -0.25rem;
+                width: 2rem;
+                border-bottom: 0.2rem solid $clr-tertiaire;
+            }
+        }
+        &__article {
+            * {
+                margin: 0;
+                //padding: 0;
+            }
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            margin: 1rem;
+            width: 21rem;
+            height: 4.5rem;
+            line-height: 2rem;
+            border-radius: 1rem;
+            box-sizing: border-box;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+            @include ombre-basse;
+            overflow: hidden;
+            white-space: nowrap;
+            &__nom {
+                font-weight: bold;
+                font-size: 1.1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &__description {
+                display: block;
+                font-size: 0.8rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                &__prix {
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    padding-right: 1rem;
+                    padding-top: 2rem;
+                    margin-left: auto;
+                    transform: translateX(4.5rem);
+                    transition: transform 1s;
+                }
+            }
+            //fond invisible au départ
+            &__fond-cache {
+                width: 4.5rem;
+                height: 4.5rem;
+                margin-top: -0.25rem;
+                margin-right: -0.5rem;
+                background-color: $clr-tertiaire;
+                transform: translateX(4.5rem);
+                transition: transform 1s;
+                & i {
+                    width: 100%;
+                    font-size: 2rem;
+                    text-align: center;
+                    line-height: 4.5rem;
+                    color: white;
+                    transform: rotate(-1turn);
+                    transition: transform 1s;
+                }
+            }
+
+            //animation
+            &:hover .menu-liste__article__description__prix, &:hover .menu-liste__article__fond-cache {
+                transform: translateX(0rem);
+                i {
+                    transform: rotate(0turn);
+                }
+            }
+            &:hover .menu-liste__article__txt {
+                width: 13rem;
+            }
+            &__txt {
+                width: 15rem;
+                transition: width 1s;
+            }
+        }
+    }
+    //Le bouton pour commander
+    &__bouton-conteneur {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        &__bouton {
+            @extend .explication__bouton;
+            text-align: center;
+            margin: auto;
+            width: 13rem;
+        }
+    }
+   //Le footer est le même sur toutes les pages (pas la peine de le rajouter ici)
 }
