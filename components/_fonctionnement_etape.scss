@@ -1,0 +1,31 @@
+.fonctionnement__etape {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f6f6f6;
+    width: 20rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+    //box-shadow: 0 0.2rem 0.5rem 0.1rem $clr-ombre;
+    @include ombre-basse;
+    border-radius: 1rem;
+    &__num {
+        //display: block;
+        background-color: $clr-primaire;
+        color: white;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 0.75rem;
+        line-height: 1.5rem;
+        text-align: center;
+        margin-left: -0.75rem;
+        font-size: 0.75rem;
+    }
+    i {
+        display: block;
+        width: 3rem;
+        color: #7e7e7e;
+        text-align: center;
+    }
+}

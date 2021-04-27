@@ -1,0 +1,12 @@
+.explication__bouton {
+    cursor: pointer;
+    height: 3rem;
+    line-height: 3rem;
+    width: 15rem;
+    background: linear-gradient(160deg, $clr-secondaire, $clr-primaire);
+    font-size: 1rem;
+    color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.2rem 0.1rem $clr-ombre;
+    margin: 2rem 0;
+}

@@ -1,0 +1,10 @@
+.menu__bouton-conteneur {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    &__bouton {
+        @extend .explication__bouton;
+        text-align: center;
+        margin: auto;
+        width: 13rem;
+    }
+}

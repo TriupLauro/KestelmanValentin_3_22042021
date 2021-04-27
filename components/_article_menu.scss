@@ -1,0 +1,76 @@
+.menu .menu-liste__article {
+    * {
+        margin: 0;
+        //padding: 0;
+    }
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 1rem;
+    width: 21rem;
+    height: 4.5rem;
+    line-height: 2rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    @include ombre-basse;
+    overflow: hidden;
+    white-space: nowrap;
+    &__nom {
+        font-weight: bold;
+        font-size: 1.1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__description {
+        display: block;
+        font-size: 0.8rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &__prix {
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding-right: 1rem;
+            padding-top: 2rem;
+            margin-left: auto;
+            transform: translateX(4rem);
+            transition: transform 1s;
+        }
+    }
+    //fond invisible au départ
+    &__fond-cache {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-top: -0.25rem;
+        margin-right: -0.5rem;
+        background-color: $clr-tertiaire;
+        transform: translateX(4.5rem);
+        transition: transform 1s;
+        & i {
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 4.5rem;
+            color: white;
+            transform: rotate(-1turn);
+            transition: transform 1s;
+        }
+    }
+    
+    //animation du menu
+    &:hover .menu-liste__article__description__prix, &:hover .menu-liste__article__fond-cache {
+        transform: translateX(0rem);
+        i {
+            transform: rotate(0turn);
+        }
+    }
+    &:hover .menu-liste__article__txt {
+        width: 13rem;
+    }
+    &__txt {
+        width: 15rem;
+        transition: width 1s;
+    }
+}

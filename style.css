@@ -3,23 +3,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-  width: auto;
-  height: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header img {
-  width: 10rem;
-  height: 2rem;
+.menu {
+  background-color: #f6f6f6;
+  margin-bottom: -1rem;
 }
 
 .localisation {
@@ -33,39 +19,6 @@ header img {
 
 .localisation i {
   padding-right: 1rem;
-}
-
-.explication {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #f6f6f6;
-  height: 15rem;
-  padding: 2rem 0;
-}
-
-.explication * {
-  text-align: center;
-}
-
-.explication h1 {
-  width: 15rem;
-  font-size: 1.5rem;
-}
-
-.explication p {
-  width: 22.5rem;
-  font-size: 1rem;
 }
 
 .explication__bouton, .menu__bouton-conteneur__bouton {
@@ -82,28 +35,7 @@ header img {
   margin: 2rem 0;
 }
 
-.fonctionnement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2rem 0;
-}
-
-.fonctionnement h2 {
-  font-size: 1.4rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-left: 1rem;
-}
-
-.fonctionnement__etape1 {
+.fonctionnement__etape {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +53,7 @@ header img {
   border-radius: 1rem;
 }
 
-.fonctionnement__etape1__num {
+.fonctionnement__etape__num {
   background-color: #9356DC;
   color: white;
   width: 1.5rem;
@@ -133,100 +65,14 @@ header img {
   font-size: 0.75rem;
 }
 
-.fonctionnement__etape1 i {
+.fonctionnement__etape i {
   display: block;
   width: 3rem;
   color: #7e7e7e;
   text-align: center;
 }
 
-.fonctionnement__etape2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  background-color: #f6f6f6;
-  width: 20rem;
-  height: 4rem;
-  line-height: 4rem;
-  margin-bottom: 1.5rem;
-  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-          box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-  border-radius: 1rem;
-}
-
-.fonctionnement__etape2__num {
-  background-color: #9356DC;
-  color: white;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 0.75rem;
-  line-height: 1.5rem;
-  text-align: center;
-  margin-left: -0.75rem;
-  font-size: 0.75rem;
-}
-
-.fonctionnement__etape2 i {
-  display: block;
-  width: 3rem;
-  color: #7e7e7e;
-  text-align: center;
-}
-
-.fonctionnement__etape3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  background-color: #f6f6f6;
-  width: 20rem;
-  height: 4rem;
-  line-height: 4rem;
-  margin-bottom: 1.5rem;
-  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-          box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-  border-radius: 1rem;
-}
-
-.fonctionnement__etape3__num {
-  background-color: #9356DC;
-  color: white;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 0.75rem;
-  line-height: 1.5rem;
-  text-align: center;
-  margin-left: -0.75rem;
-  font-size: 0.75rem;
-}
-
-.fonctionnement__etape3 i {
-  display: block;
-  width: 3rem;
-  color: #7e7e7e;
-  text-align: center;
-}
-
-.restaurants {
-  background-color: #f6f6f6;
-  padding-bottom: 2rem;
-  margin-bottom: -1rem;
-}
-
-.restaurants h2 {
-  font-size: 1.4rem;
-  margin-left: 1rem;
-  padding-top: 2rem;
-}
-
-.restaurants__palette {
+.restaurants__carte {
   width: 21rem;
   height: 15.5rem;
   display: -webkit-box;
@@ -244,13 +90,13 @@ header img {
           box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
 }
 
-.restaurants__palette__imgconteneur {
+.restaurants__carte__imgconteneur {
   width: 100%;
   height: 11rem;
   position: relative;
 }
 
-.restaurants__palette__imgconteneur img {
+.restaurants__carte__imgconteneur img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -260,7 +106,7 @@ header img {
   border-radius: 1rem 1rem 0 0;
 }
 
-.restaurants__palette__imgconteneur__info {
+.restaurants__carte__imgconteneur__info {
   text-align: center;
   position: absolute;
   right: 1rem;
@@ -273,7 +119,7 @@ header img {
   font-size: 0.8rem;
 }
 
-.restaurants__palette__legende {
+.restaurants__carte__legende {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,17 +128,17 @@ header img {
   height: 4.5rem;
 }
 
-.restaurants__palette__legende__txt h3 {
+.restaurants__carte__legende__txt h3 {
   padding: 0.25rem;
   margin: 0.25rem 0.4rem;
 }
 
-.restaurants__palette__legende__txt p {
+.restaurants__carte__legende__txt p {
   padding: 0.25rem;
   margin: 0 0.4rem;
 }
 
-.restaurants__palette__legende i {
+.restaurants__carte__legende i {
   margin-left: auto;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -302,7 +148,7 @@ header img {
           transform: scale(0.9);
 }
 
-.restaurants__palette__legende i::after {
+.restaurants__carte__legende i::after {
   font-family: "Font Awesome 5 Free";
   content: "\f004";
   font-weight: bold;
@@ -318,441 +164,9 @@ header img {
   transition: transform 1s, -webkit-transform 1s;
 }
 
-.restaurants__palette__legende i:hover::after {
+.restaurants__carte__legende i:hover::after {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.restaurants__note_enchantee {
-  width: 21rem;
-  height: 15.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 1rem;
-  margin: 1rem auto;
-  text-decoration: none;
-  color: black;
-  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-          box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-}
-
-.restaurants__note_enchantee__imgconteneur {
-  width: 100%;
-  height: 11rem;
-  position: relative;
-}
-
-.restaurants__note_enchantee__imgconteneur img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 60%;
-     object-position: 0 60%;
-  border-radius: 1rem 1rem 0 0;
-}
-
-.restaurants__note_enchantee__imgconteneur__info {
-  text-align: center;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  width: 5rem;
-  height: 1.5rem;
-  line-height: 1.5rem;
-  background-color: #99E2D0;
-  color: #32b091;
-  font-size: 0.8rem;
-}
-
-.restaurants__note_enchantee__legende {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  border-radius: 0 0 1rem 1rem;
-  height: 4.5rem;
-}
-
-.restaurants__note_enchantee__legende__txt h3 {
-  padding: 0.25rem;
-  margin: 0.25rem 0.4rem;
-}
-
-.restaurants__note_enchantee__legende__txt p {
-  padding: 0.25rem;
-  margin: 0 0.4rem;
-}
-
-.restaurants__note_enchantee__legende i {
-  margin-left: auto;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  position: relative;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.restaurants__note_enchantee__legende i::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  font-weight: bold;
-  color: #9356DC;
-  position: absolute;
-  left: 0;
-  line-height: 1;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.restaurants__note_enchantee__legende i:hover::after {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.restaurants__francaise {
-  width: 21rem;
-  height: 15.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 1rem;
-  margin: 1rem auto;
-  text-decoration: none;
-  color: black;
-  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-          box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-}
-
-.restaurants__francaise__imgconteneur {
-  width: 100%;
-  height: 11rem;
-  position: relative;
-}
-
-.restaurants__francaise__imgconteneur img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 60%;
-     object-position: 0 60%;
-  border-radius: 1rem 1rem 0 0;
-}
-
-.restaurants__francaise__imgconteneur__info {
-  text-align: center;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  width: 5rem;
-  height: 1.5rem;
-  line-height: 1.5rem;
-  background-color: #99E2D0;
-  color: #32b091;
-  font-size: 0.8rem;
-}
-
-.restaurants__francaise__legende {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  border-radius: 0 0 1rem 1rem;
-  height: 4.5rem;
-}
-
-.restaurants__francaise__legende__txt h3 {
-  padding: 0.25rem;
-  margin: 0.25rem 0.4rem;
-}
-
-.restaurants__francaise__legende__txt p {
-  padding: 0.25rem;
-  margin: 0 0.4rem;
-}
-
-.restaurants__francaise__legende i {
-  margin-left: auto;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  position: relative;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.restaurants__francaise__legende i::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  font-weight: bold;
-  color: #9356DC;
-  position: absolute;
-  left: 0;
-  line-height: 1;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.restaurants__francaise__legende i:hover::after {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.restaurants__delice_sens {
-  width: 21rem;
-  height: 15.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 1rem;
-  margin: 1rem auto;
-  text-decoration: none;
-  color: black;
-  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-          box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
-}
-
-.restaurants__delice_sens__imgconteneur {
-  width: 100%;
-  height: 11rem;
-  position: relative;
-}
-
-.restaurants__delice_sens__imgconteneur img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 60%;
-     object-position: 0 60%;
-  border-radius: 1rem 1rem 0 0;
-}
-
-.restaurants__delice_sens__imgconteneur__info {
-  text-align: center;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  width: 5rem;
-  height: 1.5rem;
-  line-height: 1.5rem;
-  background-color: #99E2D0;
-  color: #32b091;
-  font-size: 0.8rem;
-}
-
-.restaurants__delice_sens__legende {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  border-radius: 0 0 1rem 1rem;
-  height: 4.5rem;
-}
-
-.restaurants__delice_sens__legende__txt h3 {
-  padding: 0.25rem;
-  margin: 0.25rem 0.4rem;
-}
-
-.restaurants__delice_sens__legende__txt p {
-  padding: 0.25rem;
-  margin: 0 0.4rem;
-}
-
-.restaurants__delice_sens__legende i {
-  margin-left: auto;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  position: relative;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.restaurants__delice_sens__legende i::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  font-weight: bold;
-  color: #9356DC;
-  position: absolute;
-  left: 0;
-  line-height: 1;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.restaurants__delice_sens__legende i:hover::after {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-footer {
-  background-color: #353535;
-  padding-bottom: 1rem;
-}
-
-footer h2 {
-  color: white;
-  font-family: 'Shrikhand', cursive;
-  font-size: 1.2rem;
-  font-weight: normal;
-  margin-left: 2.5rem;
-  padding-top: 1rem;
-}
-
-footer ul {
-  list-style: none;
-  font-size: 0.9rem;
-}
-
-footer ul a {
-  color: white;
-  text-decoration: none;
-}
-
-footer ul li {
-  margin: 0.5rem 0;
-}
-
-footer ul li i {
-  width: 1.5rem;
-}
-
-.menu {
-  background-color: #f6f6f6;
-  margin-bottom: -1rem;
-}
-
-.menu header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.menu header h1 {
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
-  margin-left: 4rem;
-}
-
-.menu header nav {
-  margin-left: -4rem;
-  font-size: 1.2rem;
-}
-
-.menu header nav a {
-  color: black;
-}
-
-.menu .imgconteneur {
-  position: relative;
-  height: 17rem;
-}
-
-.menu .imgconteneur img {
-  width: 100%;
-  height: 17rem;
-}
-
-.menu .imgconteneur h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  background-color: #f6f6f6;
-  border-radius: 2rem 2rem 0 0;
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
-  font-size: 1.8rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 1rem;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  height: 4rem;
-  width: 100%;
-}
-
-.menu .imgconteneur h2 i {
-  display: block;
-  margin-left: auto;
-  margin-right: 1rem;
-  cursor: pointer;
-  position: relative;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.menu .imgconteneur h2 i::after {
-  content: "\f004";
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  color: #9356DC;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.menu .imgconteneur h2 i:hover::after {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.menu .menu-liste h3 {
-  font-weight: normal;
-  font-size: 1rem;
-  text-transform: uppercase;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-left: 1rem;
-  position: relative;
-}
-
-.menu .menu-liste h3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.25rem;
-  width: 2rem;
-  border-bottom: 0.2rem solid #99E2D0;
 }
 
 .menu .menu-liste__article {
@@ -869,5 +283,226 @@ footer ul li i {
   text-align: center;
   margin: auto;
   width: 13rem;
+}
+
+header {
+  width: auto;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 10rem;
+  height: 2rem;
+}
+
+.explication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  height: 15rem;
+  padding: 2rem 0;
+}
+
+.explication * {
+  text-align: center;
+}
+
+.explication h1 {
+  width: 15rem;
+  font-size: 1.5rem;
+}
+
+.explication p {
+  width: 22.5rem;
+  font-size: 1rem;
+}
+
+.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.fonctionnement h2 {
+  font-size: 1.4rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 1rem;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding-bottom: 2rem;
+  margin-bottom: -1rem;
+}
+
+.restaurants h2 {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+
+footer {
+  background-color: #353535;
+  padding-bottom: 1rem;
+}
+
+footer h2 {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-left: 2.5rem;
+  padding-top: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li {
+  margin: 0.5rem 0;
+}
+
+footer ul li i {
+  width: 1.5rem;
+}
+
+.menu header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu header h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  margin-left: 4rem;
+}
+
+.menu header nav {
+  margin-left: -4rem;
+  font-size: 1.2rem;
+}
+
+.menu header nav a {
+  color: black;
+}
+
+.menu .imgconteneur {
+  position: relative;
+  height: 17rem;
+}
+
+.menu .imgconteneur img {
+  width: 100%;
+  height: 17rem;
+}
+
+.menu .imgconteneur h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  font-size: 1.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1rem;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 4rem;
+  width: 100%;
+}
+
+.menu .imgconteneur h2 i {
+  display: block;
+  margin-left: auto;
+  margin-right: 1rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.menu .imgconteneur h2 i::after {
+  content: "\f004";
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  color: #9356DC;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.menu .imgconteneur h2 i:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.menu .menu-liste h3 {
+  font-weight: normal;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.menu .menu-liste h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 2rem;
+  border-bottom: 0.2rem solid #99E2D0;
 }
 /*# sourceMappingURL=style.css.map */

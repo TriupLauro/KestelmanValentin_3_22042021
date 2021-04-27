@@ -1,0 +1,18 @@
+.menu .menu-liste {
+    h3 {
+        font-weight: normal;
+        font-size: 1rem;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        margin-left: 1rem;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.25rem;
+            width: 2rem;
+            border-bottom: 0.2rem solid $clr-tertiaire;
+        }
+    }   
+}
