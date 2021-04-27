@@ -1,4 +1,6 @@
 .menu .menu-liste {
+    max-width: 70rem;
+    margin: auto;
     h3 {
         font-weight: normal;
         font-size: 1rem;
@@ -14,5 +16,8 @@
             width: 2rem;
             border-bottom: 0.2rem solid $clr-tertiaire;
         }
+    }
+    &__wrapper {
+        @include wrapper;
     }   
 }

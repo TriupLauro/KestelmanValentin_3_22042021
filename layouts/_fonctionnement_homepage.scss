@@ -8,4 +8,7 @@
         align-self: flex-start;
         margin-left: 1rem;
     }
+    &__wrapper {
+        @include wrapper;
+    }
 }

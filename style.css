@@ -29,6 +29,7 @@ body {
   background: linear-gradient(160deg, #FF79DA, #9356DC);
   font-size: 1rem;
   color: white;
+  text-decoration: none;
   border-radius: 1.5rem;
   -webkit-box-shadow: 0 0.2rem 0.1rem #CCC;
           box-shadow: 0 0.2rem 0.1rem #CCC;
@@ -47,7 +48,7 @@ body {
   width: 20rem;
   height: 4rem;
   line-height: 4rem;
-  margin-bottom: 1.5rem;
+  margin: 0.7rem 1rem;
   -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
           box-shadow: 0 0.2rem 0.5rem 0.1rem #CCC;
   border-radius: 1rem;
@@ -386,6 +387,17 @@ header img {
   margin-left: 1rem;
 }
 
+.fonctionnement__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 2rem;
@@ -396,6 +408,17 @@ header img {
   font-size: 1.4rem;
   margin-left: 1rem;
   padding-top: 2rem;
+}
+
+.restaurants__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {
@@ -458,11 +481,15 @@ footer ul li i {
 .menu .imgconteneur {
   position: relative;
   height: 17rem;
+  max-width: 70rem;
+  margin: auto;
 }
 
 .menu .imgconteneur img {
   width: 100%;
   height: 17rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu .imgconteneur h2 {
@@ -516,6 +543,11 @@ footer ul li i {
           transform: scale(1.1);
 }
 
+.menu .menu-liste {
+  max-width: 70rem;
+  margin: auto;
+}
+
 .menu .menu-liste h3 {
   font-weight: normal;
   font-size: 1rem;
@@ -533,5 +565,16 @@ footer ul li i {
   bottom: -0.25rem;
   width: 2rem;
   border-bottom: 0.2rem solid #99E2D0;
+}
+
+.menu .menu-liste__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
