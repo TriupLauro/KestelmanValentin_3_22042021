@@ -1,3 +1,13 @@
+//Declaration des animations
+@keyframes rotation-aller {
+    from {
+        transform: rotate(-1turn);
+    }
+    to {
+        transform: rotate(0turn);
+    }
+}
+
 .menu .menu-liste__article {
     * {
         margin: 0;
@@ -17,6 +27,10 @@
     @include ombre-basse;
     overflow: hidden;
     white-space: nowrap;
+    &__txt {
+        flex: 10;
+        transition: flex 1s;
+    }
     &__nom {
         font-weight: bold;
         font-size: 1.1rem;
@@ -35,42 +49,44 @@
             padding-right: 1rem;
             padding-top: 2rem;
             margin-left: auto;
-            transform: translateX(4rem);
-            transition: transform 1s;
+            //transform: translateX(4rem);
+            //transition: transform 1s;
         }
     }
     //fond invisible au départ
     &__fond-cache {
-        width: 4.5rem;
+        //width: 4.5rem;
         height: 4.5rem;
+        display: flex;
+        //Correction pour correspondre aux bords
         margin-top: -0.25rem;
         margin-right: -0.5rem;
         background-color: $clr-tertiaire;
-        transform: translateX(4.5rem);
-        transition: transform 1s;
-        & i {
+        flex: 0 1 0;
+        overflow: hidden;
+        white-space: nowrap;
+        //transform: translateX(4.5rem);
+        transition: flex 0.5s;
+        i {
             width: 100%;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            margin: auto;
             text-align: center;
-            line-height: 4.5rem;
             color: white;
-            transform: rotate(-1turn);
-            transition: transform 1s;
         }
     }
     
     //animation du menu
-    &:hover .menu-liste__article__description__prix, &:hover .menu-liste__article__fond-cache {
-        transform: translateX(0rem);
+    &:hover .menu-liste__article__fond-cache {
+        flex: 1;
         i {
-            transform: rotate(0turn);
+            animation: rotation-aller 0.8s 0.1s;
+            //transition: none;
         }
+        transition: flex 0.5s;
     }
     &:hover .menu-liste__article__txt {
-        width: 13rem;
+        flex: 4;
     }
-    &__txt {
-        width: 15rem;
-        transition: width 1s;
-    }
+
 }
