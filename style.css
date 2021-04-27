@@ -117,6 +117,7 @@ body {
   background-color: #99E2D0;
   color: #32b091;
   font-size: 0.8rem;
+  border-radius: 0.1rem;
 }
 
 .restaurants__carte__legende {
@@ -227,6 +228,7 @@ body {
   transition: -webkit-box-flex 1s;
   transition: flex 1s;
   transition: flex 1s, -webkit-box-flex 1s, -ms-flex 1s;
+  overflow: hidden;
 }
 
 .menu .menu-liste__article__nom {
@@ -296,8 +298,8 @@ body {
 
 .menu .menu-liste__article:hover .menu-liste__article__txt {
   -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+      -ms-flex: 4 1;
+          flex: 4 1;
 }
 
 .menu__bouton-conteneur {

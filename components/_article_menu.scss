@@ -30,6 +30,7 @@
     &__txt {
         flex: 10;
         transition: flex 1s;
+        overflow: hidden;
     }
     &__nom {
         font-weight: bold;
@@ -81,12 +82,11 @@
         flex: 1;
         i {
             animation: rotation-aller 0.8s 0.1s;
-            //transition: none;
         }
         transition: flex 0.5s;
     }
     &:hover .menu-liste__article__txt {
-        flex: 4;
+        flex: 4 1;
     }
 
 }
