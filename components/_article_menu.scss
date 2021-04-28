@@ -1,27 +1,3 @@
-//Declaration des animations
-
-//Apparition d'un article
-@keyframes apparition {
-    from {
-        opacity: 0;
-        transform: translateY(1rem);
-    } 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-//Rotation du checkmark
-@keyframes rotation-aller {
-    from {
-        transform: rotate(-1turn);
-    }
-    to {
-        transform: rotate(0turn);
-    }
-}
-
 .menu .menu-liste__article {
     * {
         margin: 0;

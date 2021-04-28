@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animations";
 @import "./base/general";
 @import "./base/menu_mise-en-forme";
 
@@ -7,6 +8,7 @@
 @import "./components/bouton_explication";
 @import "./components/fonctionnement_etape";
 @import "./components/carte_restaurants";
+@import "./components/loader";
 
 @import "./components/article_menu";
 @import "./components/bouton_commander";

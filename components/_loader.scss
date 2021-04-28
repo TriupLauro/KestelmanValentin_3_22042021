@@ -1,0 +1,32 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom :0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $clr-fond-gris;
+    animation: disparition 3s 3s both;
+    &__spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //margin: auto;
+        width: 7.5rem;
+        height: 7.5rem;
+        text-align: center;
+        border-radius: 4rem;
+        background: $fond-degrade;
+        animation: bob 0.5s 5 alternate ease-in-out both, unradius 1s 2s both ease-in-out;
+        color: white;
+        &__titre {
+            font-family: 'Shrikhand', cursive;
+            font-size: 1rem;
+            animation: bob 0.5s 0.25s 5.5 ease-in-out alternate both;
+        }
+    }
+    
+}
