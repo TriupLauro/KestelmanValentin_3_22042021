@@ -1,4 +1,18 @@
 //Declaration des animations
+
+//Apparition d'un article
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    } 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//Rotation du checkmark
 @keyframes rotation-aller {
     from {
         transform: rotate(-1turn);
@@ -16,7 +30,7 @@
     display: flex;
     flex-direction: row;
     background-color: white;
-    margin: 1rem;
+    margin: 0.5rem 1rem;
     width: 21rem;
     height: 4.5rem;
     line-height: 2rem;
@@ -76,7 +90,13 @@
             color: white;
         }
     }
-    
+    //Apparition des articles en décalé
+    @for $ordre from 0 through 10 {
+        &.menu-liste__article--ordre#{$ordre} {
+            animation: apparition 1s $ordre*0.2s backwards;
+        }
+    }
+
     //animation du menu
     &:hover .menu-liste__article__fond-cache {
         flex: 1;
