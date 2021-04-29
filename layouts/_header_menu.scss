@@ -1,16 +1,16 @@
 .menu header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #fff;
     h1 {
         font-family: 'Shrikhand', cursive;
         font-weight: normal;
         //Mettre la marge opposé à nav pour que ça reste centré
-        margin-left: 4rem;
+        margin: auto;
     }
     nav {
         //Prendre la marge opposé à h1 pour que ça s'aligne à gauche
-        margin-left: -4rem;
+        margin-left: 1rem;
         font-size: 1.2rem;
         a {
             color: black;

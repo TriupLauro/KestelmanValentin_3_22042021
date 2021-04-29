@@ -28,4 +28,10 @@
         color: #7e7e7e;
         text-align: center;
     }
+    &:hover i {
+        color: $clr-primaire;
+    }
+    &:hover {
+        background-color: $clr-prim-gris;
+    }
 }

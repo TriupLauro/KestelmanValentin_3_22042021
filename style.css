@@ -225,8 +225,8 @@ body {
 }
 
 .explication__bouton:hover, .menu__bouton-conteneur__bouton:hover {
-  -webkit-animation: defile 5s infinite linear;
-          animation: defile 5s infinite linear;
+  -webkit-animation: defile 2.5s infinite linear;
+          animation: defile 2.5s infinite linear;
   -webkit-box-shadow: 0.2rem 0.4rem 0.5rem #999999;
           box-shadow: 0.2rem 0.4rem 0.5rem #999999;
 }
@@ -266,6 +266,14 @@ body {
   width: 3rem;
   color: #7e7e7e;
   text-align: center;
+}
+
+.fonctionnement__etape:hover i {
+  color: #9356DC;
+}
+
+.fonctionnement__etape:hover {
+  background-color: #F5EDFF;
 }
 
 .restaurants__carte {
@@ -639,6 +647,12 @@ header img {
   padding: 2rem 0;
 }
 
+@media all and (min-width: 500px) {
+  .explication {
+    height: 12rem;
+  }
+}
+
 .explication * {
   text-align: center;
 }
@@ -648,9 +662,21 @@ header img {
   font-size: 1.5rem;
 }
 
+@media all and (min-width: 500px) {
+  .explication h1 {
+    width: auto;
+  }
+}
+
 .explication p {
   width: 22.5rem;
   font-size: 1rem;
+}
+
+@media all and (min-width: 500px) {
+  .explication p {
+    width: auto;
+  }
 }
 
 .fonctionnement {
@@ -744,20 +770,20 @@ footer ul li i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #fff;
 }
 
 .menu header h1 {
   font-family: 'Shrikhand', cursive;
   font-weight: normal;
-  margin-left: 4rem;
+  margin: auto;
 }
 
 .menu header nav {
-  margin-left: -4rem;
+  margin-left: 1rem;
   font-size: 1.2rem;
 }
 
