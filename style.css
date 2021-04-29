@@ -216,7 +216,6 @@
             transform: scale(0.9);
   }
   100% {
-    background-size: 10000%;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
@@ -258,7 +257,6 @@
             transform: scale(0.9);
   }
   100% {
-    background-size: 10000%;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
@@ -445,7 +443,7 @@ body {
   left: 0;
   line-height: 1;
   color: transparent;
-  background: linear-gradient(160deg, #EDA1A1 10%, #FF79DA 35%, #9356DC 65%, #9356DC 75%, #0F21e7 90%);
+  background: linear-gradient(160deg, #EDA1A1 10%, #FF79DA 35%, #9356DC 65%, #0F21e7 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-transform: scale(0);
@@ -928,7 +926,7 @@ footer ul li i {
   position: absolute;
   left: 0;
   color: transparent;
-  background: linear-gradient(160deg, #EDA1A1 10%, #FF79DA 35%, #9356DC 65%, #9356DC 75%, #0F21e7 90%);
+  background: linear-gradient(160deg, #EDA1A1 10%, #FF79DA 35%, #9356DC 65%, #0F21e7 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-transform: scale(0);
