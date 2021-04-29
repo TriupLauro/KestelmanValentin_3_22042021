@@ -85,3 +85,39 @@
         background-position: 35%;
     }
 }
+
+//Coeur animé plus ultra
+@keyframes battant {
+    10% {
+        background-position: 5%;
+    }
+    20% {
+        background-position: 35%;
+    }
+    50% {
+        background-position: 95%;
+        transform: scale(1.5);
+    }
+    60% {
+        transform: scale(0.5);
+    }
+    70% {
+        background-position: 35%;
+        transform: scale(1.5);
+    }
+    80% {
+        background-position: 5%;
+        transform: scale(0.5);
+    }
+    90% {
+        background-position: 35%;
+        transform: scale(1.5);
+    }
+    95% {
+        transform: scale(0.9);
+    }
+    100% {
+        background-size: 10000%;
+        transform: scale(1.1);
+    }
+}

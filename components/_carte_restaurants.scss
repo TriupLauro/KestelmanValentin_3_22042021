@@ -58,15 +58,15 @@
                 font-family: "Font Awesome 5 Free";
                 content: "\f004";
                 font-weight: bold;
-                color: $clr-primaire;
                 position: absolute;
                 left: 0;
                 line-height: 1;
-                transform: scale(0);
-                transition: transform 1s;
+                @include prepa-coeur;
+                //transition: transform 1s;
             }
             &:hover::after {
-                transform: scale(1.1);
+                animation: battant 3s linear forwards;
+                //transform: scale(1.1);
             }
         }
     }

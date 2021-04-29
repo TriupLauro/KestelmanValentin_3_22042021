@@ -35,12 +35,12 @@
                 font-weight: bold;
                 position: absolute;
                 left: 0;
-                color: $clr-primaire;
-                transform: scale(0);
-                transition: transform 1s;
+                @include prepa-coeur;
+                //transition: transform 1s;
             }
             &:hover::after {
-                transform: scale(1.1);
+                //transform: scale(1.1);
+                animation: battant 3s linear forwards;
             }
         }
     }

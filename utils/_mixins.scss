@@ -7,3 +7,13 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@mixin prepa-coeur {
+    color: transparent;
+    background: $fond-degrade-etendu-alt;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: scale(0);
+    background-size: 1000%;
+    background-position: 65%;
+}
