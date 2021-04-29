@@ -144,6 +144,42 @@
   }
 }
 
+@-webkit-keyframes defile {
+  from {
+    background-position: 35%;
+  }
+  25% {
+    background-position: 5%;
+  }
+  50% {
+    background-position: 35%;
+  }
+  75% {
+    background-position: 95%;
+  }
+  to {
+    background-position: 35%;
+  }
+}
+
+@keyframes defile {
+  from {
+    background-position: 35%;
+  }
+  25% {
+    background-position: 5%;
+  }
+  50% {
+    background-position: 35%;
+  }
+  75% {
+    background-position: 95%;
+  }
+  to {
+    background-position: 35%;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -172,14 +208,27 @@ body {
   height: 3rem;
   line-height: 3rem;
   width: 15rem;
-  background: linear-gradient(160deg, #FF79DA, #9356DC);
+  background: linear-gradient(160deg, #EDA1A1 10%, #FF79DA 35%, #9356DC 65%, #0F21e7 90%);
+  background-size: 333%;
+  background-position: 35%;
   font-size: 1rem;
   color: white;
   text-decoration: none;
   border-radius: 1.5rem;
   -webkit-box-shadow: 0 0.2rem 0.1rem #CCC;
           box-shadow: 0 0.2rem 0.1rem #CCC;
+  -webkit-transition: -webkit-box-shadow 0.5s linear;
+  transition: -webkit-box-shadow 0.5s linear;
+  transition: box-shadow 0.5s linear;
+  transition: box-shadow 0.5s linear, -webkit-box-shadow 0.5s linear;
   margin: 2rem 0;
+}
+
+.explication__bouton:hover, .menu__bouton-conteneur__bouton:hover {
+  -webkit-animation: defile 5s infinite linear;
+          animation: defile 5s infinite linear;
+  -webkit-box-shadow: 0.2rem 0.4rem 0.5rem #999999;
+          box-shadow: 0.2rem 0.4rem 0.5rem #999999;
 }
 
 .fonctionnement__etape {
@@ -337,8 +386,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #f6f6f6;
-  -webkit-animation: disparition 3s 3s both;
-          animation: disparition 3s 3s both;
+  -webkit-animation: disparition 0.5s 2.5s both;
+          animation: disparition 0.5s 2.5s both;
 }
 
 .loader__spinner {
@@ -356,16 +405,24 @@ body {
   text-align: center;
   border-radius: 4rem;
   background: linear-gradient(160deg, #FF79DA, #9356DC);
-  -webkit-animation: bob 0.5s 5 alternate ease-in-out both, unradius 1s 2s both ease-in-out;
-          animation: bob 0.5s 5 alternate ease-in-out both, unradius 1s 2s both ease-in-out;
+  -webkit-animation: bob 0.5s infinite alternate ease-in-out both;
+          animation: bob 0.5s infinite alternate ease-in-out both;
   color: white;
 }
 
 .loader__spinner__titre {
-  font-family: 'Shrikhand', cursive;
   font-size: 1rem;
-  -webkit-animation: bob 0.5s 0.25s 5.5 ease-in-out alternate both;
-          animation: bob 0.5s 0.25s 5.5 ease-in-out alternate both;
+  -webkit-animation: bob 0.5s 0.25s infinite ease-in-out alternate both;
+          animation: bob 0.5s 0.25s infinite ease-in-out alternate both;
+}
+
+.loader__logo {
+  font-size: 1.5rem;
+  font-family: 'Shrikhand', cursive;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-animation: apparition 1s 2s backwards;
+          animation: apparition 1s 2s backwards;
 }
 
 .menu .menu-liste__article {

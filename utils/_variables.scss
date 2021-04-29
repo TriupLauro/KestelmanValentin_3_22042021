@@ -6,5 +6,6 @@ $clr-ombre: #CCC;
 $clr-fond-gris: #f6f6f6;
 
 $fond-degrade: linear-gradient(160deg, $clr-secondaire, $clr-primaire);
+$fond-degrade-etendu: linear-gradient(160deg,#EDA1A1  10%, #FF79DA 35%, #9356DC 65%, #0F21e7 90%);
 
 $list-restaurants: "palette", "note_enchantee", "francaise", "delice_sens";

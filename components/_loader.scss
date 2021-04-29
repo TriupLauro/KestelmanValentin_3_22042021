@@ -9,7 +9,7 @@
     width: 100vw;
     height: 100vh;
     background-color: $clr-fond-gris;
-    animation: disparition 3s 3s both;
+    animation: disparition 0.5s 2.5s both;
     &__spinner {
         display: flex;
         justify-content: center;
@@ -20,13 +20,18 @@
         text-align: center;
         border-radius: 4rem;
         background: $fond-degrade;
-        animation: bob 0.5s 5 alternate ease-in-out both, unradius 1s 2s both ease-in-out;
+        animation: bob 0.5s infinite alternate ease-in-out both;
         color: white;
         &__titre {
-            font-family: 'Shrikhand', cursive;
             font-size: 1rem;
-            animation: bob 0.5s 0.25s 5.5 ease-in-out alternate both;
+            animation: bob 0.5s 0.25s infinite ease-in-out alternate both;
         }
+    }
+    &__logo {
+        font-size: 1.5rem;
+        font-family: 'Shrikhand', cursive;
+        transform: translateY(-1rem);
+        animation: apparition 1s 2s backwards;
     }
     
 }

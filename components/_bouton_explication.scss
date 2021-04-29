@@ -3,11 +3,18 @@
     height: 3rem;
     line-height: 3rem;
     width: 15rem;
-    background: $fond-degrade;
+    background: $fond-degrade-etendu;
+    background-size: 333%;
+    background-position: 35%;
     font-size: 1rem;
     color: white;
     text-decoration: none;
     border-radius: 1.5rem;
     box-shadow: 0 0.2rem 0.1rem $clr-ombre;
+    transition: box-shadow 0.5s linear;
     margin: 2rem 0;
+    &:hover {
+        animation: defile 5s infinite linear;
+        box-shadow:0.2rem 0.4rem 0.5rem darken($clr-ombre,20);
+    }
 }

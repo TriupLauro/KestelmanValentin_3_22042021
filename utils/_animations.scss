@@ -15,6 +15,7 @@
 }
 
 @keyframes spinner {
+    //inutilisée
     from {
         transform: rotate(0turn);
     }
@@ -34,6 +35,7 @@
 }
 
 @keyframes unradius {
+    //Inutilisée
     from {
         border-radius: 4rem;
     }
@@ -62,5 +64,24 @@
     }
     to {
         transform: rotate(0turn);
+    }
+}
+
+//Défilement du dégradé
+@keyframes defile {
+    from {
+        background-position: 35%;
+    }
+    25% {
+        background-position: 5%;
+    }
+    50% {
+        background-position: 35%;
+    }
+    75% {
+        background-position: 95%;
+    }
+    to {
+        background-position: 35%;
     }
 }
