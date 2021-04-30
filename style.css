@@ -269,7 +269,9 @@ body {
 
 .menu {
   background-color: #f6f6f6;
+  margin: auto;
   margin-bottom: -1rem;
+  max-width: 70rem;
 }
 
 .localisation {
@@ -453,8 +455,8 @@ body {
 }
 
 .restaurants__carte__legende i:hover::after {
-  -webkit-animation: battant 2s linear forwards;
-          animation: battant 2s linear forwards;
+  -webkit-animation: battant 1.5s linear forwards;
+          animation: battant 1.5s linear forwards;
 }
 
 .loader {
@@ -932,8 +934,8 @@ footer ul li i {
 }
 
 .menu .imgconteneur h2 i:hover::after {
-  -webkit-animation: battant 2s linear forwards;
-          animation: battant 2s linear forwards;
+  -webkit-animation: battant 1.5s linear forwards;
+          animation: battant 1.5s linear forwards;
 }
 
 .menu .menu-liste {

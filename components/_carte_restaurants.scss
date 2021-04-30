@@ -65,7 +65,7 @@
                 //transition: transform 1s;
             }
             &:hover::after {
-                animation: battant 2s linear forwards;
+                animation: battant 1.5s linear forwards;
                 //transform: scale(1.1);
             }
         }

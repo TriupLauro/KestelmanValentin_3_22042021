@@ -1,5 +1,7 @@
 .menu {
     background-color: $clr-fond-gris;
     //Correction pour enlever une barre blanche entre le menu et le footer
+    margin: auto;
     margin-bottom: -1rem;
+    max-width: 70rem;
 }
