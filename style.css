@@ -453,8 +453,8 @@ body {
 }
 
 .restaurants__carte__legende i:hover::after {
-  -webkit-animation: battant 3s linear forwards;
-          animation: battant 3s linear forwards;
+  -webkit-animation: battant 2s linear forwards;
+          animation: battant 2s linear forwards;
 }
 
 .loader {
@@ -664,10 +664,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-transition: -webkit-box-flex 0.5s;
-  transition: -webkit-box-flex 0.5s;
-  transition: flex 0.5s;
-  transition: flex 0.5s, -webkit-box-flex 0.5s, -ms-flex 0.5s;
 }
 
 .menu .menu-liste__article:hover .menu-liste__article__fond-cache i {
@@ -936,8 +932,8 @@ footer ul li i {
 }
 
 .menu .imgconteneur h2 i:hover::after {
-  -webkit-animation: battant 3s linear forwards;
-          animation: battant 3s linear forwards;
+  -webkit-animation: battant 2s linear forwards;
+          animation: battant 2s linear forwards;
 }
 
 .menu .menu-liste {
