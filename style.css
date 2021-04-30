@@ -858,12 +858,12 @@ footer ul li i {
 .menu header h1 {
   font-family: 'Shrikhand', cursive;
   font-weight: normal;
-  margin: auto;
+  margin-left: 5rem;
 }
 
 .menu header nav {
-  margin-left: 1rem;
   font-size: 1.2rem;
+  margin-left: 1rem;
 }
 
 .menu header nav a {

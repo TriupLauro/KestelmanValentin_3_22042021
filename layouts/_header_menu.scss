@@ -5,13 +5,12 @@
     h1 {
         font-family: 'Shrikhand', cursive;
         font-weight: normal;
-        //Mettre la marge opposé à nav pour que ça reste centré
-        margin: auto;
+        margin-left: 5rem;
+        //Centré pour iPhone mais marge fixe, se décalera vers la gauche pour de plus grandes résolutions        
     }
     nav {
-        //Prendre la marge opposé à h1 pour que ça s'aligne à gauche
-        margin-left: 1rem;
         font-size: 1.2rem;
+        margin-left: 1rem;
         a {
             color: black;
         } 
