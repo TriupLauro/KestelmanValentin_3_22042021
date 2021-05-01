@@ -28,9 +28,9 @@
         }
     }
     &__logo {
+        margin-top: -5rem;
         font-size: 1.5rem;
         font-family: 'Shrikhand', cursive;
-        transform: translateY(-1rem);
         animation: apparition 1s 2s backwards;
     }
     

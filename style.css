@@ -510,10 +510,9 @@ body {
 }
 
 .loader__logo {
+  margin-top: -5rem;
   font-size: 1.5rem;
   font-family: 'Shrikhand', cursive;
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
   -webkit-animation: apparition 1s 2s backwards;
           animation: apparition 1s 2s backwards;
 }
