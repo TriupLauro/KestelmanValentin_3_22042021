@@ -606,61 +606,6 @@ body {
   color: white;
 }
 
-.menu .menu-liste__article.menu-liste__article--ordre0 {
-  -webkit-animation: apparition 1s 0s backwards;
-          animation: apparition 1s 0s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre1 {
-  -webkit-animation: apparition 1s 0.2s backwards;
-          animation: apparition 1s 0.2s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre2 {
-  -webkit-animation: apparition 1s 0.4s backwards;
-          animation: apparition 1s 0.4s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre3 {
-  -webkit-animation: apparition 1s 0.6s backwards;
-          animation: apparition 1s 0.6s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre4 {
-  -webkit-animation: apparition 1s 0.8s backwards;
-          animation: apparition 1s 0.8s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre5 {
-  -webkit-animation: apparition 1s 1s backwards;
-          animation: apparition 1s 1s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre6 {
-  -webkit-animation: apparition 1s 1.2s backwards;
-          animation: apparition 1s 1.2s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre7 {
-  -webkit-animation: apparition 1s 1.4s backwards;
-          animation: apparition 1s 1.4s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre8 {
-  -webkit-animation: apparition 1s 1.6s backwards;
-          animation: apparition 1s 1.6s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre9 {
-  -webkit-animation: apparition 1s 1.8s backwards;
-          animation: apparition 1s 1.8s backwards;
-}
-
-.menu .menu-liste__article.menu-liste__article--ordre10 {
-  -webkit-animation: apparition 1s 2s backwards;
-          animation: apparition 1s 2s backwards;
-}
-
 .menu .menu-liste__article:hover .menu-liste__article__fond-cache {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -970,5 +915,65 @@ footer ul li i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menu .menu-liste__wrapper--entrees .menu-liste__article:nth-child(1) {
+  -webkit-animation: apparition 1s 0.2s backwards;
+          animation: apparition 1s 0.2s backwards;
+}
+
+.menu .menu-liste__wrapper--entrees .menu-liste__article:nth-child(2) {
+  -webkit-animation: apparition 1s 0.4s backwards;
+          animation: apparition 1s 0.4s backwards;
+}
+
+.menu .menu-liste__wrapper--entrees .menu-liste__article:nth-child(3) {
+  -webkit-animation: apparition 1s 0.6s backwards;
+          animation: apparition 1s 0.6s backwards;
+}
+
+.menu .menu-liste__wrapper--entrees .menu-liste__article:nth-child(4) {
+  -webkit-animation: apparition 1s 0.8s backwards;
+          animation: apparition 1s 0.8s backwards;
+}
+
+.menu .menu-liste__wrapper--plats .menu-liste__article:nth-child(1) {
+  -webkit-animation: apparition 1s 1.2s backwards;
+          animation: apparition 1s 1.2s backwards;
+}
+
+.menu .menu-liste__wrapper--plats .menu-liste__article:nth-child(2) {
+  -webkit-animation: apparition 1s 1.4s backwards;
+          animation: apparition 1s 1.4s backwards;
+}
+
+.menu .menu-liste__wrapper--plats .menu-liste__article:nth-child(3) {
+  -webkit-animation: apparition 1s 1.6s backwards;
+          animation: apparition 1s 1.6s backwards;
+}
+
+.menu .menu-liste__wrapper--plats .menu-liste__article:nth-child(4) {
+  -webkit-animation: apparition 1s 1.8s backwards;
+          animation: apparition 1s 1.8s backwards;
+}
+
+.menu .menu-liste__wrapper--desserts .menu-liste__article:nth-child(1) {
+  -webkit-animation: apparition 1s 2.2s backwards;
+          animation: apparition 1s 2.2s backwards;
+}
+
+.menu .menu-liste__wrapper--desserts .menu-liste__article:nth-child(2) {
+  -webkit-animation: apparition 1s 2.4s backwards;
+          animation: apparition 1s 2.4s backwards;
+}
+
+.menu .menu-liste__wrapper--desserts .menu-liste__article:nth-child(3) {
+  -webkit-animation: apparition 1s 2.6s backwards;
+          animation: apparition 1s 2.6s backwards;
+}
+
+.menu .menu-liste__wrapper--desserts .menu-liste__article:nth-child(4) {
+  -webkit-animation: apparition 1s 2.8s backwards;
+          animation: apparition 1s 2.8s backwards;
 }
 /*# sourceMappingURL=style.css.map */

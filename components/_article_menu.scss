@@ -67,11 +67,14 @@
         }
     }
     //Apparition des articles en décalé
-    @for $ordre from 0 through 10 {
-        &.menu-liste__article--ordre#{$ordre} {
-            animation: apparition 1s $ordre*0.2s backwards;
-        }
-    }
+    
+    //Ancienne version avec classes numérotées
+    // @for $ordre from 0 through 10 {
+    //     &.menu-liste__article--ordre#{$ordre} {
+    //         animation: apparition 1s $ordre*0.2s backwards;
+    //     }
+    // }
+
 
     //animation du menu
     &:hover .menu-liste__article__fond-cache {

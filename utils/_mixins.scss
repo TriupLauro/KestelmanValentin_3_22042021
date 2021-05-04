@@ -17,3 +17,12 @@
     background-size: 1000%;
     background-position: 65%;
 }
+
+//mettre dans un élément parent commun à tous les enfants que l'on veut animer
+@mixin scatter($target, $base_delay, $increment_delay, $element_count) {
+    @for $num from 1 through $element_count {
+        .#{$target}:nth-child(#{$num}) {
+            animation: apparition 1s $base_delay+($increment_delay*$num) backwards;
+        }
+    }
+}

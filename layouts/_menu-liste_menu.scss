@@ -18,6 +18,17 @@
         }
     }
     &__wrapper {
+        //Permet de faire apparaître les éléments avec un décalage
+        //Changer le dernier argument de scatter s'il y a un plus grand nombre d'éléments
         @include wrapper;
+        &--entrees {
+            @include scatter(menu-liste__article,0s,0.2s,4);
+        }
+        &--plats {
+            @include scatter(menu-liste__article,1s,0.2s,4);
+        }
+        &--desserts {
+            @include scatter(menu-liste__article,2s,0.2s,4);
+        }
     }   
 }
