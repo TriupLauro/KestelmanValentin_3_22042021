@@ -1,3 +1,16 @@
+//Page d'accueil
+header {
+    width: auto;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 10rem;
+        height: 2rem;
+    }
+}
+
 .menu header {
     display: flex;
     justify-content: flex-start;
@@ -5,12 +18,16 @@
     h1 {
         font-family: 'Shrikhand', cursive;
         font-weight: normal;
-        margin-left: 5rem;
+        margin-left: -1.2rem;
+        flex: 1;
+        text-align: center;
         //Centré pour iPhone mais marge fixe, se décalera vers la gauche pour de plus grandes résolutions        
     }
     nav {
         font-size: 1.2rem;
-        margin-left: 1rem;
+        margin-left: 1.2rem;
+        //Pour permettre de cliquer
+        z-index: 1;
         a {
             color: black;
         } 

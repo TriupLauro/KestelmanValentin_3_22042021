@@ -1,0 +1,49 @@
+.menu {
+    .imgconteneur {
+        position: relative;
+        height: 17rem;
+        max-width: 70rem;
+        margin: auto;
+        img {
+            width: 100%;
+            height: 17rem;
+            object-fit: cover;
+        }
+        h2 {
+            display: flex;
+            align-items: flex-end;
+            background-color: $clr-fond-gris;
+            border-radius: 2rem 2rem 0 0;
+            font-family: 'Shrikhand', cursive;
+            font-weight: normal;
+            font-size: 1.8rem;
+            box-sizing: border-box;
+            padding-left: 1rem;
+            position: absolute;
+            bottom:0;
+            margin: 0;
+            height: 4rem;
+            width: 100%;
+            i {
+                display: block;
+                margin-left: auto;
+                margin-right: 1rem;
+                cursor: pointer;
+                position: relative;
+                transform: scale(0.9);
+                &::after {
+                    content: "\f004";
+                    font-weight: bold;
+                    position: absolute;
+                    left: 0;
+                    @include prepa-coeur;
+                    //transition: transform 1s;
+                }
+                &:hover::after {
+                    //transform: scale(1.1);
+                    animation: battant 1.5s linear forwards;
+                }
+            }
+        }
+    }
+}
